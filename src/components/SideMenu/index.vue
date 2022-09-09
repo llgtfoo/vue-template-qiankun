@@ -94,6 +94,7 @@
 </template>
 
 <script>
+import menuJson from '@/mock/menu/menu.json'
 //菜单无限循环生成
 const SubMenu = {
   template: `
@@ -122,6 +123,7 @@ const SubMenu = {
     },
   },
 }
+
 export default {
   name: 'SideMenu',
   components: { SubMenu },
@@ -134,16 +136,18 @@ export default {
       tabList: [], //打开的菜单集合
       isRouterActive: true,
       closable: true,
+      menus: menuJson,
     }
   },
-  computed: {
-    //获取二级菜单
-    menus() {
-      return this.$store.getters['common/user/getCurrentMenu'] && this.$store.getters['common/user/getCurrentMenu'][
-        'children'
-      ]
-    },
-  },
+  // computed: {
+  //   //获取二级菜单
+  //   menus() {
+  //     return this.$store.getters['common/user/getCurrentMenu'] 
+  //     && this.$store.getters['common/user/getCurrentMenu'][
+  //       'children'
+  //     ]
+  //   },
+  // },
   watch: {
     $route: {
       handler(route) {

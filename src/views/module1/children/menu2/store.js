@@ -1,4 +1,4 @@
-import { test } from './api.js'
+import { test } from './views/menu/api.js'
 
 const state = {
   home: 'home测试',

@@ -1,15 +1,36 @@
 [
     {
-        "cname": "首页",
-        "cnameKey": "/home",
-        "normalUrl": "/home",
-        "icon": ""
+        "cname": "实有人口",
+        "cnameKey": "/menu1",
+        "normalUrl": "/menu1",
+        "icon": "icon-data",
+        "children": [
+            {
+                "cname": "菜单一",
+                "cnameKey": "/menu1/moduleMenu1",
+                "normalUrl": "/menu1/moduleMenu1",
+                "icon": "icon-integral-fill1"
+            }
+        ]
     },
     {
-        "cname": "模块一",
-        "cnameKey": "/app-vue",
-        "normalUrl": "/app-vue",
-        "icon": "",
-        "children": []
+        "cname": "实有房屋",
+        "cnameKey": "/menu2",
+        "normalUrl": "/menu2",
+        "icon": "icon-column",
+        "children": [
+            {
+                "cname": "菜单一",
+                "cnameKey": "/menu2/moduleMenu1",
+                "normalUrl": "/menu2/moduleMenu1",
+                "icon": "icon-product1"
+            }
+        ]
+    },
+    {
+        "cname": "实有房屋",
+        "cnameKey": "/menu21",
+        "normalUrl": "/menu21",
+        "icon": "icon-agriculture"
     }
 ]

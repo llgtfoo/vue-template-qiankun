@@ -3,7 +3,7 @@
  * @param {type}
  */
 import { Debounce } from '../../utils'
-// import './children.polyfill'
+import './children.polyfill'
 export default (Vue) => {
   Vue.directive('auto-scale', {
     inserted: function (el, { value = { width: 1920, height: 1080 }}) {

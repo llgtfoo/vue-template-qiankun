@@ -16,6 +16,9 @@ module.exports = {
     },
   },
   devServer: {
+    headers: {
+      'Access-Control-Allow-Origin': '*',
+    },
     proxy: {
       '/api': {
         target: 'https://www.fastmock.site/mock/a76ff711b33a233cdeac2112d8d909d0/llgtfoo/',

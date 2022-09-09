@@ -11,7 +11,7 @@ VueRouter.prototype.push = function push(location) {
 
 const router = new VueRouter({
   mode: 'history',
-  base: process.env.BASE_URL,
+  base: window.__POWERED_BY_QIANKUN__ ? '/app-vue/' : '/',
 })
-
+console.log(router)
 export default router

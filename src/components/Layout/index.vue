@@ -21,8 +21,9 @@
           :index="item.normalUrl"
           v-for="item in menuList"
           :key="item.normalUrl"
-          >{{ item.cname }}</el-menu-item
         >
+          {{ item.cname }}
+        </el-menu-item>
       </el-menu>
       <div class="system-time">
         <date-time v-slot:default="slotProps">
@@ -52,7 +53,7 @@
         </div>
       </div>
     </el-header>
-    <div style="height: calc(100% - 60px)" id="wrapper">
+    <div style="height: calc(100% - 60px)">
       <router-view></router-view>
     </div>
   </el-container>
