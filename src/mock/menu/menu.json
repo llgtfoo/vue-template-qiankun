@@ -1,0 +1,15 @@
+[
+    {
+        "cname": "首页",
+        "cnameKey": "/home",
+        "normalUrl": "/home",
+        "icon": ""
+    },
+    {
+        "cname": "模块一",
+        "cnameKey": "/app-vue",
+        "normalUrl": "/app-vue",
+        "icon": "",
+        "children": []
+    }
+]
